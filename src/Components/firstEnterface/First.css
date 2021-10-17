@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+  }
+ 
+  #about{
+      background-color: rgb(136, 128, 128);
+      border-radius: 10px;
+      color: white;
+  }
+  #login{
+   
+    border-radius: 10px;
+  }
+ 
