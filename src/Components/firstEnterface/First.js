@@ -1,11 +1,22 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';  
+import Navbar from "../navbar/Navbar";
 import  Card from '../Card/Card'
-import {col, Container, Row , Form, Button,img} from "react-bootstrap";
+import {col, Container, Row , Form, Button,img,Dropdown,ButtonGroup} from "react-bootstrap";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './First.css'
+import LoginCard from "../Login/LoginCard";
+import RecruiterLogin from "../Login/RecruiterLogin";
+import StudentLogin from "../Login/StudentLogin";
  
 function First(){
     return(
+      <Router>
         <div>  
         <div className="container">
         <div className="row">
@@ -16,55 +27,45 @@ function First(){
 
      🎓 Centurion University🎓
     </a>
+    <Dropdown as={ButtonGroup}>
+  <Button variant="Secondary">Login</Button>
+
+  <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
+
+  <Dropdown.Menu>
+    <Dropdown.Item href="/LoginCard">Admin Login</Dropdown.Item>
+    <Dropdown.Item href="/RecruiterLogin">Recruiter Login</Dropdown.Item>
+    <Dropdown.Item href="StudentLogin">Student Login</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
   </div>
 </nav>
-
-
-
-        </div>
-        <br></br><br></br><br></br>
+ </div>
+  <br></br><br></br><br></br>
        
-        <div class="card text-center">
+  <div class="card text-center">
   <div class="card-header">
-     💖Login Form💖
+    
   </div>
- 
+ <div class="card-body" id="cbdy">
+ <div className="row">
+  <div className="col"id="about">
+  <Switch>
+
+<Route exact path='/LoginCard' component={LoginCard}></Route>
+<Route exact path='/RecruiterLogin' component={RecruiterLogin}></Route>
+<Route exact path='/StudentLogin' component={StudentLogin}></Route>
+    </Switch>
+    </div>
+
   
-  <div class="card-body" id="cbdy">
-   
-  <div className="row">
-  <div className="col-6" id="about">
- <center><h1>CUTM Paralkhemundi Placement Cell</h1></center>
-  <p>The recruitment activities of CUTM Paralkhemundi take
-   place with no capitation fees or donations and are purely
-    based on merit. To make the students industry-ready and 
-    enhance their performance in the campus interviews, CDC 
-    conducts numerous training programmes, knowledge sharing
-     activities and counselling sessions. In addition to this, 
-     the trainees here are closely monitored for improvements
-      through several VST’s and company mock tests. 
-  Some of the programmes conducted by this cell include:</p>
-  </div>
-  <div className="col-6" id="login">
- 
-  <div>
-    <a href="LoginCard.js" class="btn btn-primary"> Admin Login </a>
-    </div><br></br>
-   
-    <div>
-    <a href="#" class="btn btn-primary">Student Login</a>
-    </div>
-    <br></br>
-    <div>
-    <a href="#" class="btn btn-primary">Recruiter Login</a>
-    </div>
 
   </div>
  
   </div>
   </div>
   <div class="card-footer text-muted">
-    💖💖💖
+   
   </div>
   </div>
 </div>
@@ -76,15 +77,15 @@ function First(){
 <div className="row">
 <div className="col-4">
 <Card
-imgsrc=""
+imgsrc="https://iisy.fi/wp-content/uploads/2018/08/user-profile-male-logo.jpg"
 sname=" Prof. K V D Prakash"
 title="(Head Training, Placement & Alliances)"
-link="#"
+link=""
  />,
 </div>
 <div className="col-4">
 <Card
-imgsrc=""
+imgsrc="https://iisy.fi/wp-content/uploads/2018/08/user-profile-male-logo.jpg"
 sname=" Lokesh Ray"
 
 title="(Manager Placement)"
@@ -94,7 +95,7 @@ link="#"
 </div>
 <div className="col-4">
 <Card
-imgsrc=""
+imgsrc="https://iisy.fi/wp-content/uploads/2018/08/user-profile-male-logo.jpg"
 sname=" Somanath Pradhan"
 title="(Training & Placement Officer)"
 link="#"
@@ -135,143 +136,10 @@ link="https://www.motherson.com/"
 </div>
 <div className="col-4">
 <Card
-imgsrc="file:///C:/Users/lc/Desktop/nlogo.png"
+imgsrc="https://toppng.com/uploads/preview/indian-navy-logo-11562975550dcedrktvmp.png"
 sname=" Indian Navy"
 title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div><div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div><div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
-/>
-
-</div>
-<div className="col-4">
-<Card
-imgsrc="https://mocdn.gs1.org/sites/default/files/motherson_logo.jpg"
-sname=" MotherSon"
-title="This is our recruiter"
-link="https://www.motherson.com/"
+link="https://www.joinindiannavy.gov.in/"
 />
 
 </div>
@@ -280,7 +148,8 @@ link="https://www.motherson.com/"
  
 
  </div>
- </div>
+ 
+ </Router>
     )
 
 }

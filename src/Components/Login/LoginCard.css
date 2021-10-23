@@ -10,7 +10,7 @@
       width: 100%;
   }
   #adl{
-      background-color: tomato; 
+      background-color: rgba(64, 7, 219, 0.911); 
       text-align: center;
       color: whitesmoke;
       font-style:unset;
@@ -21,7 +21,10 @@
     background-color:thistle;
     text-align: center;
     margin-top: 5%;
-    margin-left: 40%;
+    margin-left: 37%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+
      border-radius: 10px;
      
   }
@@ -31,12 +34,15 @@
       background-color: tomato;
       width: 70px;
       border-radius: 5px;
+      margin-left: 4%;
   }
   #email{
       border-radius: 5px;
       border-width: 1px;
+      text-align: center;
   }
   #psw{
     border-radius: 5px;
     border-width: 1px;
+    text-align: center;
 }
