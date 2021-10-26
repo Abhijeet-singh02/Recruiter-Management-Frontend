@@ -1,11 +1,6 @@
 import React, { Component } from 'react'
 import './LoginCard.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {useHistory} from "react-router-dom";
 /*import {connect} from 'react-redux';
 import { render } from 'react-dom';
 
@@ -40,12 +35,13 @@ this.props.authenticateUser(this.state.email , this.state.password)
  })
 };*/
 
-class LoginCard extends Component{
-render() {
+function LoginCard ({authorized}){
  
+
+  let history = useHistory();
   //const{email ,password,error} = this.state;
 return (
-  <Router>
+ 
     <>
     <body id="bdy">
     <h1 id="adl">Admin Login</h1>
@@ -63,7 +59,8 @@ return (
     //value={password} onChange={this.credentialchange}
     placeholder="password" required autoComplete="off"/>
     </div>
-    <button type="submit" id="btn" href="/Navbar">Login</button>
+    <button type="submit" id="btn" onClick={() =>{history.push("/Navbar")
+  }}>Login</button>
     <button type="reset" id="btn" >
     
     Reset</button>
@@ -72,10 +69,10 @@ return (
     </form>
     </body>
     </>
-    </Router>
+  
   )
 }
-}
+
 
 /*const mapStateToProps = state => {
   return{   

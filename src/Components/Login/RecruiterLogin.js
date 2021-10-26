@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './LoginCard.css';
+import RecruiterDashboard from '../navbar/Dash/RecruiterDashboard'
+import {useHistory} from "react-router-dom";
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,14 +9,16 @@ import {
   Link
 } from "react-router-dom";
 import { render } from 'react-dom';
-class RecruiterLogin extends Component{
-render() {
+function RecruiterLogin (
+  ){
+    let history = useHistory();
+
 return (
   <Router>
     <>
     <body id="bdy">
     <h1 id="adl">Recruiter Login</h1>
-    <form id="frm">
+    <div id="frm">
     <div>
     <label htmlFor="username">Username</label>
     <input type="email"name="email"id="email" placeholder="email"
@@ -28,19 +32,20 @@ return (
     
     placeholder="password" required autoComplete="off"/>
     </div>
-    <button type="submit" id="btn" href="/Navbar">Login</button>
+    <button type="submit" id="btn" onClick={() =>{history.push("/RecruiterDashboard")
+  }}>Login</button>
     <button type="reset" id="btn" >
     
     Reset</button>
    
     
-    </form>
+    </div>
     </body>
     </>
     </Router>
   )
 }
-}
+
 
 
  export default RecruiterLogin;

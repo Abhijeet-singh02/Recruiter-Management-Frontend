@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import Navbar from "../navbar/Navbar";
 import  Card from '../Card/Card'
+
 import {col, Container, Row , Form, Button,img,Dropdown,ButtonGroup} from "react-bootstrap";
 import {
   BrowserRouter as Router,
@@ -13,6 +14,7 @@ import './First.css'
 import LoginCard from "../Login/LoginCard";
 import RecruiterLogin from "../Login/RecruiterLogin";
 import StudentLogin from "../Login/StudentLogin";
+import RecruiterDashboard from "../navbar/Dash/RecruiterDashboard";
  
 function First(){
     return(
@@ -47,14 +49,18 @@ function First(){
   <div class="card-header">
     
   </div>
- <div class="card-body" id="cbdy">
+ 
  <div className="row">
-  <div className="col"id="about">
+  <div className="col">
   <Switch>
 
 <Route exact path='/LoginCard' component={LoginCard}></Route>
 <Route exact path='/RecruiterLogin' component={RecruiterLogin}></Route>
 <Route exact path='/StudentLogin' component={StudentLogin}></Route>
+<Route  path="/Navbar" component={Navbar}></Route>
+<Route path="/RecruiterDashboard" component={RecruiterDashboard}></Route>
+
+
     </Switch>
     </div>
 
@@ -69,7 +75,7 @@ function First(){
   </div>
   </div>
 </div>
-</div>
+
 <br></br><br></br>
 
 <h1 className="heading_style">Contact Us☎</h1>

@@ -10,8 +10,16 @@ import RecruiterLogin from './Components/Login/RecruiterLogin';
 import RecruiterDashboard from './Components/navbar/Dash/RecruiterDashboard';
 
 
+
 function App() {
+ 
   return (
+
+
+
+
+
+
       <div className="App">
       
       <First></First>
@@ -19,6 +27,8 @@ function App() {
 
  
  </div>
+ 
+
    
   );
 }
