@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import Navbar from "../navbar/Navbar";
 import  Card from '../Card/Card'
+import Footer from "./Footer";
 
 import {col, Container, Row , Form, Button,img,Dropdown,ButtonGroup} from "react-bootstrap";
 import {
@@ -154,8 +155,10 @@ link="https://www.joinindiannavy.gov.in/"
  
 
  </div>
- 
+
+ <Footer/>
  </Router>
+
     )
 
 }

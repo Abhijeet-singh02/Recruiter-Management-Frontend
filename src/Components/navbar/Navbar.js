@@ -37,6 +37,7 @@ class Navbar extends React.Component{
             </ul>
             <Button>Logout</Button>
             </nav>
+            
         )
     }
 }

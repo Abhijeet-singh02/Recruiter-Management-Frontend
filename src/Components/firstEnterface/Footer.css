@@ -1,0 +1,11 @@
+#back{
+    background-color: black;
+    color: whitesmoke;
+}
+.btn{
+    border: 4px;
+    border-radius: 4px;
+    border-color: whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+}

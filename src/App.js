@@ -8,6 +8,7 @@ import  First  from './Components/firstEnterface/First';
 import { Nav } from 'react-bootstrap';
 import RecruiterLogin from './Components/Login/RecruiterLogin';
 import RecruiterDashboard from './Components/navbar/Dash/RecruiterDashboard';
+import Footer from './Components/firstEnterface/Footer';
 
 
 
@@ -22,7 +23,7 @@ function App() {
 
       <div className="App">
       
-      <First></First>
+     <First/>
      
 
  
