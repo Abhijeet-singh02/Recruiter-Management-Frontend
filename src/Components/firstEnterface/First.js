@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../navbar/Navbar";
 import  Card from '../Card/Card'
 import Footer from "./Footer";
-
+import Home from "../Admin/Home";
+import Student from "../Admin/Student";
+import Recruiter from "../Admin/Recruiter"
 import {col, Container, Row , Form, Button,img,Dropdown,ButtonGroup} from "react-bootstrap";
 import {
   BrowserRouter as Router,
@@ -16,6 +18,7 @@ import LoginCard from "../Login/LoginCard";
 import RecruiterLogin from "../Login/RecruiterLogin";
 import StudentLogin from "../Login/StudentLogin";
 import RecruiterDashboard from "../navbar/Dash/RecruiterDashboard";
+import DashboardAdmin from "../Admin/DashboardAdmin";
  
 function First(){
     return(
@@ -26,7 +29,7 @@ function First(){
         <div className="col-12">
         <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
 
      🎓 Centurion University🎓
     </a>
@@ -46,10 +49,8 @@ function First(){
  </div>
   <br></br><br></br><br></br>
        
-  <div class="card text-center">
-  <div class="card-header">
-    
-  </div>
+  
+ 
  
  <div className="row">
   <div className="col">
@@ -58,8 +59,21 @@ function First(){
 <Route exact path='/LoginCard' component={LoginCard}></Route>
 <Route exact path='/RecruiterLogin' component={RecruiterLogin}></Route>
 <Route exact path='/StudentLogin' component={StudentLogin}></Route>
-<Route  path="/Navbar" component={Navbar}></Route>
+<Route  path="/DashboardAdmin" component={DashboardAdmin}></Route>
 <Route path="/RecruiterDashboard" component={RecruiterDashboard}></Route>
+
+
+  <Route path="/home" component={Home} >
+  <Home/>
+  </Route>
+  <Route path="/student" component={Student}>
+  <Student/>
+  </Route>
+  <Route path="/recruiter" component={Recruiter}>
+  <Recruiter/>
+  </Route>
+  
+  
 
 
     </Switch>
@@ -69,11 +83,9 @@ function First(){
 
   </div>
  
+  
   </div>
-  </div>
-  <div class="card-footer text-muted">
-   
-  </div>
+  
   </div>
 </div>
 

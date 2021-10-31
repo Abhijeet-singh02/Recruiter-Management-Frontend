@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import './App.css';
 import Addrecruiter from './Components/navbar/Dash/Addrecruiter'
 import Navbar from './Components/navbar/Navbar';
@@ -9,28 +10,14 @@ import { Nav } from 'react-bootstrap';
 import RecruiterLogin from './Components/Login/RecruiterLogin';
 import RecruiterDashboard from './Components/navbar/Dash/RecruiterDashboard';
 import Footer from './Components/firstEnterface/Footer';
+import DashboardAdmin from './Components/Admin/DashboardAdmin';
 
 
 
 function App() {
  
   return (
-
-
-
-
-
-
-      <div className="App">
-      
-     <First/>
-     
-
- 
- </div>
- 
-
-   
+<First/>
   );
 }
 

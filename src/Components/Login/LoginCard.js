@@ -59,7 +59,7 @@ return (
     //value={password} onChange={this.credentialchange}
     placeholder="password" required autoComplete="off"/>
     </div>
-    <button type="submit" id="btn" onClick={() =>{history.push("/Navbar")
+    <button type="submit" id="btn" onClick={() =>{history.push("/DashboardAdmin")
   }}>Login</button>
     <button type="reset" id="btn" >
     

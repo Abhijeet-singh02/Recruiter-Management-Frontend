@@ -15,7 +15,8 @@ function RecruiterDashboard() {
           
          
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
         
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav navbar-sidenav">
@@ -37,36 +38,27 @@ function RecruiterDashboard() {
                 </li>
                 <li class="nav-item">
                   <a class="nav-link sidesthrd" href="">
-                    <span class="textside">  Clients</span>
+                    <span class="textside">  	Create Job</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link sidesforth" href="">
-                    <span class="textside">  Jobs</span>
+                    <span class="textside"> 	Take Interview. </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link sidesfifth" href="">
-                    <span class="textside">  Quotation</span>
+                    <span class="textside">  List Select Student</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link sidesix" href="">
-                    <span class="textside">  Services</span>
+                    <span class="textside"> List Of Job </span>
                   </a>
                 </li>
               </ul>
               
-              <ul class="navbar-nav2 ml-auto">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome WaLia</a>
-                    <ul class="dropdown-menu">
-                        <li class="resflset"><a href="profile.php"><i class="fa fa-fw fa-cog"></i> Edit profile</a></li>
-                        <li class="divider"></li>
-                        <li class="resflset"><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
-                    </ul>
-                </li>
-              </ul>
+              
               
             </div>
           </nav>
@@ -97,7 +89,7 @@ function RecruiterDashboard() {
                            
                         </div>
                         <div class="col-lg-9 col-md-8 col-sm-8 col-8 fontsty">
-                            <h4>Clients</h4>
+                            <h4>Candidate</h4>
                             <h2>120</h2>
                         </div>
                       </div>

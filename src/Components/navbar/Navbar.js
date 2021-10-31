@@ -4,6 +4,7 @@ import { NavItem } from "react-bootstrap";
 import{ Menuitems} from "./Menuiteams"
 import { Button } from "../Button";
 import'./navbar.css'
+import LoginCard from '../Login/LoginCard'
 class Navbar extends React.Component{
   
   state ={clicked:false}
@@ -13,6 +14,8 @@ class Navbar extends React.Component{
 
     render(){
         return(
+            <div>
+            
             <nav className="NavbarItems">
           
             <h1 className="navbar-logo">Recruiter</h1>
@@ -28,17 +31,17 @@ class Navbar extends React.Component{
                     {Item.title}
                     </a>
                     </li>
-                )
-            }
-            
+             ) }
              )}
-           
-            
-            </ul>
+           </ul>
             <Button>Logout</Button>
-            </nav>
             
+            </nav>
+        
+            </div>
         )
+        
     }
 }
+
 export default Navbar;

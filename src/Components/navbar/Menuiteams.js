@@ -1,7 +1,7 @@
 export const Menuitems = [
     {
         title: 'Home',
-        url:'./Card',
+        url:'./LoginCard',
         cName: 'nav-links'
     },
     {
